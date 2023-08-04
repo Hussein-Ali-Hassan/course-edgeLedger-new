@@ -1,0 +1,117 @@
+:root {
+  --primary-color: #478946;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.navbar p {
+  font-size: 40px;
+}
+
+.navbar p span {
+  color: var(--primary-color);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+}
+
+.navbar ul li {
+  padding: 0px 10px;
+}
+
+/* pseudo classes */
+.navbar ul li:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar p {
+    font-size: 22px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    margin-top: 15px;
+  }
+}
+
+/* hero */
+.hero {
+  background-image: url("./images/home/showcase.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* pseudo elements */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.hero div h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero div p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.hero div button {
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.hero div button i {
+  margin-right: 3px;
+}
+
+.hero div button:active {
+  transform: scale(0.98);
+}
