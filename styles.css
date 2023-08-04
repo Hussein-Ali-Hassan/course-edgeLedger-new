@@ -115,3 +115,39 @@
 .hero div button:active {
   transform: scale(0.98);
 }
+
+/* services */
+.services {
+  display: flex;
+  padding: 40px 30px;
+}
+
+.services div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.services div i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.services h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    flex-direction: column;
+  }
+
+  .services div {
+    margin: 20px 20px;
+  }
+}
