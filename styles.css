@@ -254,6 +254,90 @@
   }
 }
 
+/* blog */
 #blog .content {
   background-color: #3982ca;
+}
+
+/* team */
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.team h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.team .members {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.team .member {
+  display: flex;
+  flex-direction: column;
+}
+
+.team .member span {
+  margin-top: 5px;
+}
+
+.team .members img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .team .members {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .team .members img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+#contact .form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 10px;
+  background-color: #f4f4f4;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact form .form-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact .submit-btn {
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
 }
