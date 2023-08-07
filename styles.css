@@ -341,3 +341,26 @@
   border-radius: 4px;
   font-size: 18px;
 }
+
+footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social {
+  font-size: 35px;
+}
+
+footer .social i {
+  margin: 0 8px;
+}
+
+footer .copyrights {
+  margin-top: 8px;
+  font-size: 22px;
+}
