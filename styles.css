@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -15,8 +20,12 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0 20px;
-  margin-top: 20px;
+  padding: 10px 20px 5px;
+}
+
+.nav-bg {
+  background-color: #333333;
+  opacity: 0.65;
 }
 
 .navbar p {
